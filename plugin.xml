@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 0.4" "http://jpf.sourceforge.net/plugin_0_4.dtd">
+<plugin id="com.tibbo.linkserver.plugin.device.folder" version="0.0.1" class="com.tibbo.linkserver.plugin.device.file.FolderDeviceDriver">
+  <doc>
+    <doc-text>SSD Driver</doc-text>
+  </doc>
+  <requires>
+    <import plugin-id="com.tibbo.aggregate.common.plugin.extensions"/>
+  </requires>
+  <runtime>
+    <library id="tibbo" path="/" type="code">
+      <export prefix="*"/>
+    </library>
+  </runtime>
+  <extension plugin-id="com.tibbo.aggregate.common.plugin.extensions" point-id="device" id="folder"/>
+</plugin>
